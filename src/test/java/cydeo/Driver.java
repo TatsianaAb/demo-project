@@ -23,6 +23,7 @@ public class Driver {
 
     private static WebDriver driver;
 
+
     public static WebDriver getDriver() {
         if (driver == null) {
             if (System.getProperty("BROWSER") == null) {
@@ -35,7 +36,7 @@ public class Driver {
                 case "remote-chrome":
                     try {
                         // assign your grid server address
-                        String gridAddress = "34.237.243.216";
+                        String gridAddress = "54.242.25.251";
                         URL url = new URL("http://" + gridAddress + ":4444/wd/hub");
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName("chrome");
